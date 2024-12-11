@@ -1,7 +1,6 @@
 # SKIN-LESION-CLASSIFICATION
 SKIN CANCER–MELANOMA PREDICTION  AND SKIN LESION CLASSIFICATION USING  DEEP LEARNING MODELS 
 
-# Skin Lesion Categorization using Dermoscopic Images
 
 ## Overview
 This project focuses on the categorization of skin lesions from dermoscopic images to aid in efficient and accurate diagnosis. Leveraging the ISIC segmentation and classification challenge datasets, the primary goal is to build a model with fewer parameters and lower runtime complexity during inference while maintaining high diagnostic performance.
@@ -28,7 +27,7 @@ The project involves a four-stage pipeline:
    - Fusion of DCNN and ORB features using:
      - **Hadamard Product**.
      - **Attention-based fusion techniques**.
-   - Classification using the **xgBoost model**.
+   - Classification using the **xgBoost model and ANN**.
 
 ## Results and Findings
 - The fusion of features using the Hadamard Product demonstrated lower computational expense and better performance compared to alternative approaches.
@@ -43,7 +42,7 @@ The project utilized the ISIC segmentation and classification challenge datasets
 - **Segmentation**: UNet.
 - **Feature Extraction**: ORB and DCNN.
 - **Feature Fusion**: Hadamard Product and Attention-based methods.
-- **Classifier**: xgBoost.
+- **Classifier**: xgBoost, ANN
 
 ## Model Performance Summary
 | Model                                      | Trainable Parameters | Preprocessing Techniques | Input Image Size | Segmentation | Accuracy (Train/Test) |
