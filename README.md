@@ -3,14 +3,20 @@ SKIN CANCER–MELANOMA PREDICTION  AND SKIN LESION CLASSIFICATION USING  DEEP LE
 
 
 ## Overview
-This project focuses on the categorization of skin lesions from dermoscopic images to aid in efficient and accurate diagnosis. Leveraging the ISIC segmentation and classification challenge datasets, the primary goal is to build a model with fewer parameters and lower runtime complexity during inference while maintaining high diagnostic performance.
+This project focuses on the categorization of skin lesions from dermoscopic images to aid in efficient and accurate diagnosis for the Computer Aided Diagnostic(CAD) Systems. This project is done as a part of our Final year Capstone Project under the course B.Tech AI and Data Science at Shiv Nadar University Chennai. The project duration spanned across two semesters with Phase-1 in the 7th Sem ( accounting for 3 credits) and Phase -2 in the 8-th  Sem (accounting for 6 credits) 
 
-## Key Objectives
+## PHASE 1
+Leveraging the ISIC segmentation and classification challenge datasets, the primary goal is to build a model with fewer parameters and lower runtime complexity during inference while maintaining high diagnostic performance.
+
+### Key Objectives
 - Develop a computationally efficient model for skin lesion diagnosis.
 - Minimize runtime complexity and the number of parameters in the model.
 - Achieve accurate segmentation and classification of skin lesions.
 
-## Methodology
+### Dataset
+The project utilized the ISIC segmentation and classification challenge 2018 Task 1 and Task3 datasets respectively, which consist of dermoscopic images annotated for skin lesion analysis.
+
+### Methodology
 The project involves a four-stage pipeline:
 1. **Pre-processing**:
    - Image resizing.
@@ -29,14 +35,11 @@ The project involves a four-stage pipeline:
      - **Attention-based fusion techniques**.
    - Classification using the **xgBoost model and ANN**.
 
-## Results and Findings
+### Results and Findings
 - The fusion of features using the Hadamard Product demonstrated lower computational expense and better performance compared to alternative approaches.
 - The DCNN feature extraction combined with ORB features yielded superior results in terms of accuracy and efficiency.
 
-## Dataset
-The project utilized the ISIC segmentation and classification challenge datasets, which consist of dermoscopic images annotated for skin lesion analysis.
-
-## Models and Techniques
+### Models and Techniques
 - **Base Models**: ResNet50 and ResNet151 (transfer learning).
 - **Pre-processing**: Image resizing and contrast enhancement.
 - **Segmentation**: UNet.
@@ -44,7 +47,7 @@ The project utilized the ISIC segmentation and classification challenge datasets
 - **Feature Fusion**: Hadamard Product and Attention-based methods.
 - **Classifier**: xgBoost, ANN
 
-## Model Performance Summary
+### Model Performance Summary
 | Model                                      | Trainable Parameters | Preprocessing Techniques | Input Image Size | Segmentation | Accuracy (Train/Test) |
 |-------------------------------------------|-----------------------|---------------------------|------------------|--------------|------------------------|
 | ResNet50                                  | 23M                  | Resize, Contrast          | 224x224          | No           | 90%/50%               |
@@ -53,11 +56,12 @@ The project utilized the ISIC segmentation and classification challenge datasets
 | DCNN with Feature Fusion (Hadamard)       | 29M                  | Resize, Contrast          | 256x256          | Yes          | 95.66%/57.01%         |
 | DCNN with Feature Fusion (Attention Net)  | 31M                  | Resize, Contrast          | 256x256          | Yes          | 66.78%/60%            |
 
-## Advantages of the Approach
+### Advantages of the Approach
 - Reduced computational cost during inference.
 - Improved accuracy for skin lesion classification.
-- Effective fusion of handcrafted and deep learning-based features.
+- Effective fusion of handcrafted ORB features and deep learning-based features.
 
+## PHASE 2
 ## How to Use
 1. Clone the repository:
    ```bash
