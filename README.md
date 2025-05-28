@@ -15,6 +15,7 @@ Leveraging the ISIC segmentation and classification challenge datasets, the prim
 
 ### Dataset
 The project utilized the ISIC segmentation and classification challenge 2018 Task 1 and Task3 datasets respectively, which consist of dermoscopic images annotated for skin lesion analysis.
+You could find the link to the datasets [here](https://challenge.isic-archive.com/data/#2018). 
 
 ### Methodology
 The project involves a four-stage pipeline:
@@ -106,7 +107,7 @@ Key characteristics and challenges of the dataset include:
 *   The images are often of **variable quality** and in **irregular shapes**.
 *   The metadata contains a **lot of null values**.
 
-The task is a **binary classification problem** to distinguish between malignant and benign skin lesions.
+The task is a **binary classification problem** to distinguish between malignant and benign skin lesions. You could find the link to the dataset [here](https://www.kaggle.com/competitions/isic-2024-challenge)
 
 ## Methodologies
 
