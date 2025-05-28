@@ -102,7 +102,7 @@ Key characteristics and challenges of the dataset include:
 *   It comprises **over 400,000 high-resolution RGB dermoscopic images**.
 *   It includes a **wide array of skin lesion types**, encompassing both benign and malignant cases, designed to reflect real-world clinical variability.
 *   It is a **multimodal dataset**, containing both dermoscopic images and patient metadata.
-*   It presents a **huge class imbalance ratio** in the training set, with a disproportionate distribution between benign (Class 0: 400,666 samples) and malignant (Class 1: 393 samples) samples [8, 12]. This extreme rarity of the positive class can significantly bias learning algorithms.
+*   It presents a **huge class imbalance ratio** in the training set, with a disproportionate distribution between benign (Class 0: 400,666 samples) and malignant (Class 1: 393 samples) samples. This extreme rarity of the positive class can significantly bias learning algorithms.
 *   The images are often of **variable quality** and in **irregular shapes**.
 *   The metadata contains a **lot of null values**.
 
@@ -197,11 +197,11 @@ To use this repository:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Dhev-Mugunddhan-A/skin-lesion-categorization.git
     ```
 2.  **Navigate to the `PHASE 2` directory:**
     ```bash
-    cd PHASE\ 2
+    cd PHASE2\
     ```
 3.  **Install dependencies:** You will need Python and relevant libraries for deep learning (TensorFlow/Keras, PyTorch), data processing (pandas, numpy, scikit-learn), image handling (opencv, PIL), and potentially Streamlit.
 4.  **Run the notebooks:** Explore the `.ipynb` files in the `Code files` directory to understand the data preprocessing, model implementations (CNN, ViT, MedMamba, MobileViT, Tree-based), training procedures, and evaluation.
