@@ -214,7 +214,12 @@ To use this repository:
     The web application includes saved model files (`best_model_mobilevit_v4.keras`, `fusion_model.pth`) which are used for making predictions.
 
 The `Phase_II project report vfinal.pdf` and `Skin lesion classification methodologies and workflow v 3.pdf` documents provide detailed descriptions of the methods, experiments, and results.
-
+You could also visit the following notebooks in Kaggle to start working with directly without any setup. 
+* CNN Based models -> https://www.kaggle.com/code/dhevmugunddhana333/cnn-based-models
+* Tree based models -> https://www.kaggle.com/code/dhevmugunddhana333/tree-based-models
+* medmamba models -> https://www.kaggle.com/code/dhevmugunddhana333/isic-medmamba-submissions
+* Vision Transformer models -> https://www.kaggle.com/code/dhevmugunddhana333/vision-transformer-with-keras-3
+* MobileViT -> https://www.kaggle.com/code/dhevmugunddhana333/mobilevit-with-keras-3
 
 ## Conclusion
 This project demonstrates the feasibility of developing an efficient and accurate skin lesion diagnosis system. The proposed methodologies ensure reduced runtime complexity and enhanced performance, making it suitable for practical clinical applications.
